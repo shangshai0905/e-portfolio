@@ -139,7 +139,7 @@ footer p {
 .toknow p{
   text-align: center;
   color: white;
-  font-family:Cooper;
+  font-family: 'cooper-black-regular', sans-serif;
   -webkit-text-stroke: black 1px;
   font-size: 25px;
 }
