@@ -1,0 +1,695 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body, html {
+    height: 100%;
+}
+body {
+  background: url(images/pic.jpg) no-repeat fixed;
+  background-size: cover;
+  height: 100vh;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+}
+
+#logoPic {
+    text-align: left;
+    margin-left: 15px;
+}
+@font-face {
+    font-family: lucida calligraphy;
+    src: url(LucidaCalligraphyFont.ttf);
+}
+nav, footer{
+    background-color:rgb(0, 0, 0, 0.5);
+}
+footer {
+  margin-top: auto;
+  padding-top: 20px;
+}
+footer p {
+  font-family: Lucida Calligraphy;
+  color: white;
+  text-shadow: black 1px 1px 3px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.index-social-links {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+.index-social-links a {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0, 0, 0, 0.5);
+  color: white;
+  line-height: 1;
+  margin-right: 8px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.index-social-links a:hover {
+  background: goldenrod;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.overlay-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.overlay-content a {
+  position: relative;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 25px;
+  text-decoration: none;
+}
+.overlay-content a::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: -4px;
+  background-color: goldenrod;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+.overlay-content a:hover::before, .overlay-content li:hover > a::before, .overlay-content .active > a::before {
+  visibility: visible;
+  width: 40px;
+}
+.overlay-content a:hover, .overlay-content .active > a, .overlay-content li:hover > a {
+  color: white;
+  text-decoration: none;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  text-decoration: none;
+  color: white;
+
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+.gif {
+    margin-top: 3%;
+}
+.mypic {
+    margin-top: 100px;
+}
+.toknow p{
+  text-align: center;
+  color: white;
+  font-family:Cooper;
+  -webkit-text-stroke: black 1px;
+  font-size: 25px;
+}
+
+.about, .contact, .projects {
+  background-color: rgba(29, 27, 27, 0.6);
+  margin-top: 150px;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+.title h2{
+  color: rgb(255, 255, 255, 0.6);
+  font-size: 20px;
+  font-family: Cooper;
+}
+.title p {
+  color: white;
+  font-size: 35px;
+  font-family: Cooper;
+
+}
+.title h2::after {
+  content: "";
+  width: 100px;
+  height: 2px;
+  display: inline-block;
+  background: goldenrod;
+  margin: 4px 10px;
+}
+.resume {
+  margin-bottom: 20px;
+}
+.resume a{
+  text-decoration: none;
+  color: yellow;
+  font-size: 20px;
+}
+.content {
+  width: 100%;
+}
+.content h3 {
+  color: yellow;
+  font-size: 30px;
+  font-family: Cooper;
+}
+.content p {
+  color: white;
+  font-size: 20px;
+  text-shadow: black 1px 1px 3px;
+}
+.info ul {
+  list-style: none;
+  padding: 0;
+}
+.info li {
+  text-shadow: black 1px 1px 3px;
+
+}
+.info ul li {
+  padding: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+.info ul i {
+  font-size: 20px;
+  padding-right: 2px;
+  color: goldenrod;
+}
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+}
+
+.skills .progress .skill {
+  padding: 10px 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  color: #fff;
+  font-size: 15px;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: .9s;
+  background-color: goldenrod;
+}
+
+.interests .icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  transition: ease-in-out 0.3s;
+  width: 100%;
+}
+
+.interests .icon-box i {
+  font-size: 32px;
+  padding-right: 10px;
+  line-height: 1;
+}
+
+.interests .icon-box h3 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
+  color: #fff;
+}
+
+.interests .icon-box:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+.contact .info-box, .form {
+  padding: 20px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.10);
+}
+
+.contact .info-box i{
+  font-size: 24px;
+  color: #18d26e;
+  border-radius: 50%;
+  line-height: 1;
+  padding: 14px;
+  float: left;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.contact .info-box h3 {
+  font-size: 25px;
+  color: yellow;
+  font-weight: 700;
+  margin: 10px 0 8px 68px;
+  text-shadow: black 1px 1px 3px;
+}
+
+.contact .info-box p {
+  padding: 0;
+  color: #fff;
+  font-size: 20px;
+  margin: 0 0 0 68px;
+}
+
+.contact .info-box .social-links {
+  margin: 5px 0 0 68px;
+  display: flex;
+}
+
+.contact .info-box .social-links i {
+  font-size: 25px;
+  display: inline-block;
+  color: #fff;
+  line-height: 1;
+  margin-right: 40px;
+  transition: 0.3s;
+}
+
+.contact .info-box .social-links i:hover {
+  color: #18d26e;
+}
+.contact .send span {
+  color: red;
+  bottom: 10px;
+  text-shadow: black 2px 1px 3px;
+}
+.contact .send span i {
+  color: green;
+  font-size: 20px;
+}
+.form label {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+}
+.form input[type], .form textarea {
+  background-color: rgba(233, 195, 99, 0.5);
+  color: black;
+
+}
+
+.flip-card1, .flip-card2, .flip-card3  {
+  background-color: transparent;
+  width: 100%;
+  height: 300px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card1:hover .flip-card-inner, .flip-card2:hover .flip-card-inner, .flip-card3:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  background-color: goldenrod;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.icon {
+  color: white;
+  font-size: 70px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+
+  @media screen and (max-width: 360px) {
+    #logoPic {
+      width: 50%;
+    }
+    button span {
+      font-size: 10px;
+    }
+    .mypic {
+      margin-top: 70px;
+    }
+    .overlay-content a {
+      font-size: 10px;
+    }
+    .overlay-content a:hover::before, .overlay-content li:hover > a::before, .overlay-content .active > a::before {
+      width: 15px;
+    }
+    .overlay .closebtn {
+      right: 20px;
+      font-size: 30px;
+    }
+    .index-social-links {
+      margin-top: 30px;
+    }
+    .index-social-links a {
+      font-size: 10px;
+      margin-right: 8px;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+    }
+    .toknow {
+      text-shadow: black 1px 1px 3px;
+      font-size: 12px;
+    }
+    footer p {
+      font-size: 10px;
+    }
+    footer {
+      margin-top: auto;
+      padding-top: 10px;
+    }
+    .about, .contact, .projects {
+      margin-top: 80px;
+      margin-bottom: 30px;
+    }
+    .title h2{
+      font-size: 13px;
+    }
+    .title p {
+      color: white;
+      font-size: 15px;
+    }
+    .content h3 {
+      color: yellow;
+      font-size: 20px;
+    }
+    .content p {
+      font-size: 12px;
+    }
+    .info ul i {
+      font-size: 15px;
+    }
+    .info ul li {
+      font-size: 13px;
+    }
+    .skills .progress {
+      height: 50px;
+    }
+    
+    .skills .progress .skill {
+      font-size: 10px;
+    }
+    
+    .interests .icon-box i {
+      font-size: 25px;
+    }
+    
+    .interests .icon-box h3 {
+      font-size: 12px;
+    }
+    .flip-card1, .flip-card2, .flip-card3  {
+      width: 100%;
+      height: 200px;
+    }
+    .contact .info-box i{
+      font-size: 12px;
+      padding: 10px;
+    }
+    
+    .contact .info-box h3 {
+      font-size: 15px;
+    }
+    
+    .contact .info-box p {
+      font-size: 10px;
+    }
+    
+    .contact .info-box .social-links {
+      margin: 2px 0 0 0px;
+    }
+    
+    .contact .info-box .social-links i {
+      font-size: 15px;
+      margin-right: 40px;
+    }
+    .form label {
+      font-size: 10px;
+    }
+    .form input[type], .form textarea {
+      font-size: 10px;
+    }
+    .form #btn {
+      font-size: 10px;
+    }
+  }
+  @media screen and (max-width: 500px) and (min-width: 361px) {
+    #logoPic {
+      width: 40%;
+    }
+    button span {
+      font-size: 8px;
+    }
+    .mypic {
+      margin-top: 80px;
+    }
+    .content h3 {
+      font-size: 18px;
+    }
+    .content p {
+      font-size: 13px;
+    }
+    .info ul i {
+      font-size: 15px;
+    }
+    .info ul li {
+      font-size: 13px;
+    }
+    .overlay-content a {
+      font-size: 15px;
+    }
+    .overlay-content a:hover::before, .overlay-content li:hover > a::before, .overlay-content .active > a::before {
+      width: 25px;
+    }
+    .overlay .closebtn {
+      right: 20px;
+      font-size: 40px;
+    }
+    .index-social-links {
+      margin-top: 30px;
+    }
+    .index-social-links a {
+      font-size: 20px;
+      margin-right: 8px;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+    }
+    .toknow {
+      text-shadow: black 1px 1px 3px;
+      font-size: 20px;
+    }
+    footer p {
+      font-size: 15px;
+    }
+    footer {
+      margin-top: auto;
+      padding-top: 10px;
+    }
+    .about, .contact, .projects {
+      margin-top: 75px;
+      margin-bottom: 20px;
+    }
+    .title h2{
+      font-size: 13px;
+    }
+    .title p {
+      font-size: 15px;
+    }
+    .resume a{
+      font-size: 12px;
+    }
+    .contact .info-box i{
+      font-size: 18px;
+      padding: 15px;
+    }
+    
+    .contact .info-box h3 {
+      font-size: 15px;
+    }
+    
+    .contact .info-box p {
+      font-size: 12px;
+    }
+    
+    .contact .info-box .social-links {
+      margin: 2px 0 0 10px;
+    }
+    
+    .contact .info-box .social-links i {
+      font-size: 15px;
+      margin-right: 55px;
+    }
+    .form label {
+      font-size: 13px;
+    }
+    .form input[type], .form textarea {
+      font-size: 15px;
+    }
+    .form #btn {
+      font-size: 15px;
+    }
+  }
+  @media screen and (max-width: 800px) and (min-width: 501px) {
+    #logoPic {
+      width: 30%;
+    }
+    button span {
+      font-size: 15px;
+    }
+    .mypic {
+      margin-top: 100px;
+    }
+    .overlay-content a {
+      font-size: 20px;
+    }
+    .overlay-content a:hover::before, .overlay-content li:hover > a::before, .overlay-content .active > a::before {
+      width: 30px;
+    }
+    .overlay .closebtn {
+      right: 30px;
+      font-size: 50px;
+    }
+    .index-social-links {
+      margin-top: 30px;
+    }
+    .index-social-links a {
+      font-size: 20px;
+      margin-right: 8px;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+    }
+    .toknow {
+      text-shadow: black 1px 1px 3px;
+      font-size: 20px;
+    }
+    footer p {
+      font-size: 15px;
+    }
+    footer {
+      margin-top: auto;
+      padding-top: 10px;
+    }
+    .about, .contact, .projects {
+      margin-top: 75px;
+      margin-bottom: 20px;
+    }
+    .title h2{
+      font-size: 13px;
+    }
+    .title p {
+      font-size: 15px;
+    }
+    .resume a {
+      font-size: 13px;
+    }
+    .content h3 {
+      font-size: 20px;
+    }
+    .content p {
+      font-size: 15px;
+    }
+    .info ul i {
+      font-size: 15px;
+    }
+    .info ul li {
+      font-size: 15px;
+    }
+
+    .contact .info-box i{
+      font-size: 18px;
+      padding: 15px;
+    }
+    
+    .contact .info-box h3 {
+      font-size: 18px;
+    }
+    
+    .contact .info-box p {
+      font-size: 15px;
+    }
+    
+    .contact .info-box .social-links {
+      margin: 2px 0 0 10px;
+    }
+    
+    .contact .info-box .social-links i {
+      font-size: 15px;
+      margin-right: 55px;
+    }
+    .form label {
+      font-size: 15px;
+    }
+    .form input[type], .form textarea {
+      font-size: 15px;
+    }
+    .form #btn {
+      font-size: 15px;
+    }
+  }

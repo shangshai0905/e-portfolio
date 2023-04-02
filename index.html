@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+
+</head>
+<body>
+        <nav class="navbar navbar-dark fixed-top">
+            <div class="container-fluid">
+                <div id="curtain" class="overlay">
+                    <!-- javascript: void(0) to prevent a page from reloading -->
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeCurtain()">&times;</a>
+                    <div class="overlay-content">
+                        <ul>
+                            <li class="active mb-4"><a href="index.html">Home</a></li>
+                            <li class="mb-4"><a href="about.html">About</a></li>
+                            <li class="mb-4"><a href="projects.html">Projects</a></li>
+                            <li class="mb-4"><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="images/logo.png" alt="logo" width="30%" id="logoPic" class="navbar-brand">
+                <button class="navbar-toggler me-4 bg-danger" type="button" onclick="openCurtain()">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+
+            <div class="mypic text-center">
+                <img src="images/grad2.png" alt="myself" width="25%" class="rounded-circle">
+            </div>
+
+        <div class="gif">
+            <img src="images/Untitled-1.gif" alt="gif" width="100%">
+            <img src="images/Untitled-2.gif" alt="gif" width="100%">
+            <img src="images/Untitled-3.gif" alt="gif" width="100%">
+        </div>
+        <div class="index-social-links">
+            <a href="https://facebook.com/shairahonrejas/" target="_blank"><i class="facebook bi bi-facebook"></i></a>
+            <a href=""><i class="instagram bi bi-instagram"></i></a>
+            <a href=""><i class="twitter bi bi-twitter"></i></a>
+            <a href="https://github.com/shangshai0905" target="_blank"><i class="github bi bi-github"></i></a>
+        </div>
+
+        <div class="toknow mt-4 mb-4 container">
+            <p>Let's take this road to know more about me. Click the arrow to get started <a href="about.html"> <i class="bi bi-arrow-right-circle"></i></a> </p>
+        </div>
+
+
+        <footer class="container-fluid align-bottom">
+            <p>Shaira Honrejas &copy; 2023</p>
+        </footer>
+    <script src="javascript/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaira Honrejas</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="javascript/main.js"></script>
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-dark fixed-top">
+        <div class="container-fluid">
+            <div id="curtain" class="overlay">
+                <!-- javascript: void(0) to prevent a page from reloading -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeCurtain()">&times;</a>
+                <div class="overlay-content">
+                    <ul>
+                        <li class="mb-4"><a href="index.html">Home</a></li>
+                        <li class="mb-4"><a href="about.html">About</a></li>
+                        <li class="active mb-4"><a href="projects.html">Projects</a></li>
+                        <li class="mb-4"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <img src="images/logo.png" alt="logo" width="30%" id="logoPic" class="navbar-brand">
+            <button class="navbar-toggler me-4 bg-danger" type="button" onclick="openCurtain()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    
+      <div class="container projects">
+        <div class="title">
+          <h2>Projects</h2>
+          <p>See what I made.</p>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="row container">
+                <div class="col-lg-4 col-sm-12 mb-4 col-md-6">
+                    <div class="flip-card1">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="images/miniproj1.PNG" alt="proj1" style="width:100%;height:100%;">
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="https://github.com/shangshai0905/shangshai0905.github.io.git" class="icon" title="Github">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="https://shangshai0905.github.io/" class="icon" title="View">
+                                            <i class="bi bi-eye"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-12 mb-4 col-md-6">
+                    <div class="flip-card2">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="images/activity1.PNG" alt="proj1" style="width:100%;height:100%;">
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="https://github.com/shangshai0905/activity1.git" class="icon" title="Github">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="https://shangshai0905.github.io/activity1/" class="icon" title="View">
+                                            <i class="bi bi-eye"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-12 col-md-6">
+                    <div class="flip-card3">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="images/activity2.PNG" alt="proj1" style="width:100%;height:100%;">
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="https://github.com/shangshai0905/onlinelibrary.git" class="icon" title="Github">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="https://shangshai0905.github.io/onlinelibrary/" class="icon" title="View">
+                                            <i class="bi bi-eye"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+
+
+
+    <footer class="container-fluid align-bottom">
+        <p>Shaira Honrejas &copy; 2023</p>
+    </footer>
+        
+    <script src="javascript/main.js"></script>
+        
+</body>
+</html>
