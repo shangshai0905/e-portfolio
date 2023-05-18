@@ -322,7 +322,7 @@ footer p {
   height: 100%;
 }
 
-.interests .icon-box i {
+.interests .icon-box i, .skills .icon-box i {
   font-size: 32px;
   padding-right: 10px;
   line-height: 1;
@@ -337,7 +337,7 @@ footer p {
   color: #fff;
 }
 
-.interests .icon-box:hover {
+.interests .icon-box:hover, .skills .icon-box:hover {
   background: rgba(255, 255, 255, 0.12);
 }
 .contact .info-box, .form {
